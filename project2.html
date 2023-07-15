@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Course Platform</title>
+  <link rel="stylesheet" href="online.css">
+</head>
+
+<body>
+  <header>
+    <h1>Online Course Platform</h1>
+    <!-- Add navigation links here -->
+  </header>
+
+  <main>
+    <section class="course-list">
+      <h2>Available Courses</h2>
+      <div class="course-card">
+        <h3>Course Title 1</h3>
+        <p>Description of course 1</p>
+        <button onclick="viewCourseDetails(1)">View Details</button>
+      </div>
+      <div class="course-card">
+        <h3>Course Title 2</h3>
+        <p>Description of course 2</p>
+        <button onclick="viewCourseDetails(2)">View Details</button>
+      </div>
+      <!-- Add more course cards dynamically through JavaScript -->
+    </section>
+
+    <section class="course-details" style="display: none;">
+      <h2 id="course-title"></h2>
+      <p id="course-description"></p>
+      <!-- Additional course details can be added here -->
+      <button onclick="goBackToCourseList()">Go Back</button>
+    </section>
+  </main>
+
+  <script src="edu.js"></script>
+</body>
+
+</html>
